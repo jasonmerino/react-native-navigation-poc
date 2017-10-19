@@ -6,6 +6,7 @@
  - 👎🏼 **navigator replace** _(may not implement https://github.com/wix/react-native-navigation/issues/286)_
  - ✅ **navigator pop to top**
  - 👎🏼 **navigator pop number of routes** _(may not be implemented https://github.com/wix/react-native-navigation/issues/1591. Can get around this by popping twice.)_
+ - ✅ **configurable navigation transitions per screen**
  - ✅ **select a different tab**
  - ✅ **custom styles for different platform headers**
  - ✅ **custom header components**
