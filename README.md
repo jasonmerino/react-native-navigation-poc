@@ -17,7 +17,8 @@
  - ✅ hide tabbar for individual screen
  - ✅ standard and extendable deep link handling (not as baked in as react-navigation)
  - [ ] integrate with redux
- - [ ] translucent navigation bar
+ - [ ] translucent navigation bar (buttons and titles disappear when you try to make it blur... so... not out of the box)
+   - https://github.com/wix/react-native-navigation/issues/442
 
  ## Results
 

@@ -3,8 +3,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
   TouchableOpacity,
+  View,
   Linking
 } from "react-native";
 import styles from "./styles";
@@ -19,16 +19,14 @@ const TABS = {
 };
 
 export default class HomeScreen extends Component {
+  static navigatorStyle = {
+    navBarCustomView: "app.NavigationBar.SearchHeader"
+  };
+
   constructor(props) {
     super(props);
     Linking.addEventListener("url", this.handleUrl);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
-  }
-
-  componentDidMount() {
-    this.props.navigator.setStyle({
-      navBarCustomView: "app.NavigationBar.SearchHeader"
-    });
   }
 
   componentWillUnmount() {
