@@ -25,6 +25,18 @@ export default class CategoryScreen extends Component {
           PUSH
         </Touchable>
         <Touchable onPress={() => this.props.navigator.pop()}>POP</Touchable>
+        <Touchable
+          onPress={() => {
+            this.props.navigator.pop({ animated: false });
+            this.props.navigator.push({
+              screen: "app.ProductDropsScreen",
+              animated: false,
+              title: "Product Drops"
+            });
+          }}
+        >
+          REPLACE
+        </Touchable>
       </View>
     );
   }
