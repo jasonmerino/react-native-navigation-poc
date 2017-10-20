@@ -28,6 +28,16 @@ export default class CheckoutScreen extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.pageName}>Checkout Screen</Text>
+        <Touchable
+          onPress={() => {
+            this.props.navigator.push({
+              screen: "app.CheckoutAccountInfoScreen",
+              title: "Checkout Account Info"
+            });
+          }}
+        >
+          PUSH
+        </Touchable>
       </View>
     );
   }

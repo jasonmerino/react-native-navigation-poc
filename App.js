@@ -10,6 +10,7 @@ import ProductDropsScreen from "./ProductDropsScreen";
 import ProductScreen from "./ProductScreen";
 import SearchHeader from "./SearchHeader";
 import CheckoutScreen from "./CheckoutScreen";
+import CheckoutAccountInfoScreen from "./CheckoutAccountInfoScreen";
 import styles from "./styles";
 
 // register all screens of the app (including internal ones)
@@ -24,6 +25,10 @@ function registerScreens() {
   Navigation.registerComponent("app.CategoryScreen", () => CategoryScreen);
   Navigation.registerComponent("app.ProductScreen", () => ProductScreen);
   Navigation.registerComponent("app.CheckoutScreen", () => CheckoutScreen);
+  Navigation.registerComponent(
+    "app.CheckoutAccountInfoScreen",
+    () => CheckoutAccountInfoScreen
+  );
   Navigation.registerComponent(
     "app.ProductDropsScreen",
     () => ProductDropsScreen
