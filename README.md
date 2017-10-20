@@ -28,8 +28,9 @@
 ### Cons
  - Doesn't support empty tabs, so no modal cart
  - Doesn't support navigation from non-screen components
- - Doesn't support out-of-the-box `navigator.replace()` _(Show-stopper?)_
- - Custom navigation bar support does not visually transition well from one screen to another.
+ - Doesn't support out-of-the-box `navigator.replace()`
+ - Custom navigation bar support does not visually transition well from one screen to another and cannot cover back button.
+ - Icons on tabbar need to be images or it can be hacked in this way https://github.com/wix/react-native-navigation/issues/43.
 
 ## Activity
 ![react-native-navigation activity](activity.png)
